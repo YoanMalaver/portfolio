@@ -4,34 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/logo_yoan-malaver-02.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/scrollbar.css" />
+    <link rel="stylesheet" href="./css/background.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Porfolio</title>
   </head>
   <body>
     <header class="header">
-      <img class="header__logo" src="" alt="Logo" />
+      <img class="header__logo" src="./Img/logo.svg" alt="Logo" />
       <nav class="header__navbar">
         <ul>
           <li><a href="#">About Me</a></li>
-          <li><a href="#">Experience</a></li>
-          <li><a href="#">Works</a></li>
+          <li><a href="#">Project Practice</a></li>
+          <!-- <li><a href="#">Works</a></li> -->
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <main class="content">
-      <section class="presentation">
+    <main class="container">
+      <section class="presentation presentation__initial">
+        <p>Hi, my name is</p>
         <h1>
-          Hi, <br />i'm Wilmar Malaver,<br />
+          Wilmar Yoan Malaver,<br />
           Web Developer Jr.
         </h1>
         <p>Developer Jr with React</p>
+        <button>Contact</button>
       </section>
-      <section>About Me</section>
-      <section>Experience</section>
-      <section>Works</section>
-      <section>Proyects Practice</section>
-      <section>Contact</section>
+
+      <!-- seccion about me -->
+      <h2>About me</h2>
+      <section class="presentation__aboutMe">
+        <div class="presentation__description">
+          <p>Hola! soy Wilmar Malaver, developer jr con sede en Bogota (CO).</p>
+          <p>
+            Disfruto creando cosas para la web. MI objetivo es crear productos
+            que proporcionen buenas experiencias y rendimiento. Apasionado por
+            la tecnologia y el arte ilustrativo.
+          </p>
+          <p>Tecnologias con las que trabajo:</p>
+          <ul class="col3">
+            <li>HTML & CSS</li>
+            <li>JavaScript (Es6 +)</li>
+            <li>Git & GitHub</li>
+            <li>React</li>
+            <li>Node</li>
+          </ul>
+        </div>
+        <img src="./Img/photo.jpg" alt="Foto Wilmar malaver" />
+      </section>
+      <!-- <section class="presentation">
+        <h2>Experience</h2>
+      </section> -->
+      <!-- <section class="presentation">
+        <h2>Works</h2>
+      </section> -->
+      <section class="presentation">
+        <h2>Proyects Practice</h2>
+      </section>
+      <section class="presentation">
+        <h2>Contact</h2>
+      </section>
       <div class="social__media">
         <ul>
           <li>
@@ -46,10 +84,13 @@
             <a href="#"><i class="fab fa-github fa-lg"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
           </li>
         </ul>
       </div>
     </main>
+    <footer class="footer">
+      <p>Designed & Built by Wilmar Malaver <br />Copyright 2021(c)</p>
+    </footer>
   </body>
 </html>
