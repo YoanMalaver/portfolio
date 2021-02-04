@@ -31,6 +31,18 @@ html {
   font-size: 62.5%;
 }
 
+h2 {
+  color: var(--blue-color);
+  font-size: 3.2rem;
+  border-bottom: 1px solid var(--borderblue-color);
+  margin-bottom: 25px;
+}
+
+p {
+  font-size: var(--normal);
+  color: var(--gray-color);
+}
+
 /* header */
 .header {
   width: 100%;
@@ -97,7 +109,6 @@ html {
 }
 .presentation__initial p {
   color: var(--blue-color);
-  font-size: var(--normal);
   font-weight: 600;
 }
 .presentation__initial button {
@@ -117,13 +128,6 @@ html {
 /* fin presentation */
 
 /* seccion aboutme */
-h2 {
-  color: var(--blue-color);
-  font-size: 3.2rem;
-  border-bottom: 1px solid var(--borderblue-color);
-  margin-bottom: 25px;
-}
-
 .presentation__aboutMe {
   display: flex;
   margin: 0 auto;
@@ -138,8 +142,6 @@ h2 {
   width: 80%;
   margin: 5px 0 0 5px;
   line-height: 1.6;
-  color: var(--gray-color);
-  font-size: var(--normal);
 }
 ul.col3 {
   color: var(--white-color);
@@ -181,30 +183,30 @@ ul.col3 li {
 }
 
 /* inicio seccion proyectos */
-.presentation__projects {
+.presentation__certification {
   width: 100%;
   height: calc(100vh - 100px);
   margin-top: 25px;
 }
-.projects__list {
+.certification__list {
   display: grid;
   grid-template-columns: repeat(2, minmax(100px, 500px));
   justify-content: center;
   gap: 28px;
 }
-.projects {
+.certification {
   cursor: pointer;
   position: relative;
   display: block;
 }
-.projects__image {
+.certification__image {
   margin: 0;
 }
-.projects__image img {
+.certification__image img {
   width: 100%;
   /* vertical-align: top; */
 }
-.projects__overlay {
+.certification__overlay {
   background: rgba(0, 0, 0, 0.4);
   position: absolute;
   left: 0;
@@ -217,10 +219,10 @@ ul.col3 li {
   color: var(--white-color);
   text-align: center;
 }
-.projects:hover .projects__overlay {
+.certification:hover .certification__overlay {
   display: flex;
 }
-.projects__comments {
+.certification__comments {
   width: 80px;
   margin: 5px;
   font-weight: bold;
@@ -272,13 +274,11 @@ ul.col3 li {
 
 /* footer */
 .footer {
-  color: var(--gray-color);
   margin: 10px 0;
   display: flex;
   align-content: center;
   justify-content: center;
   text-align: center;
-  font-size: var(--normal);
 }
 .footer p:hover {
   color: var(--blue-color);
