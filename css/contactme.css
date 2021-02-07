@@ -1,8 +1,5 @@
 .contact {
   margin: 0 auto;
-  border: 1px solid gray;
-  border-radius: 4px;
-  margin-top: 0 auto;
   color: var(--white-color);
   width: 35%;
   display: flex;
@@ -14,10 +11,14 @@
 }
 .contact__form {
   width: 100%;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 5em;
 }
-.contact__form form {
-  margin: 0;
-  padding: 3em;
+.contact__form h2 {
+  text-align: center;
+  border-bottom: none;
+  margin-bottom: 15px;
 }
 
 .contact__form form .block {

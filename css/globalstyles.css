@@ -1,0 +1,57 @@
+/* ----------Variables----------- */
+:root {
+  --blackground-color: #222;
+  --black-color: #1a1a1a;
+  --blue-color: #25a6ff;
+  --white-color: white;
+  --gray-color: gray;
+  --borderblue-color: #25a6ff;
+  /* Tipografia */
+  --normal: 1.6rem;
+}
+/* como usar las variables 
+main {
+  background-color: var(--green-color);
+} */
+/* ----------Variables----------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--blackground-color);
+  line-height: 1.6;
+}
+
+/* Manejo de medidas rem para las fuentes */
+/* ej 14px  == a 1.4rem */
+html {
+  font-size: 62.5%;
+}
+
+h2 {
+  color: var(--blue-color);
+  font-size: 3.2rem;
+  border-bottom: 1px solid var(--borderblue-color);
+  margin-bottom: 25px;
+}
+
+p {
+  font-size: var(--normal);
+  color: var(--gray-color);
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  font-size: var(--normal);
+  font-weight: 600;
+  color: var(--white-color);
+  border: 1px solid var(--blue-color);
+  border-radius: 4px;
+}
+
+button:hover {
+  background: var(--blue-color);
+  transition: background-color 0.8s ease-out;
+}
