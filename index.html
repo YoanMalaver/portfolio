@@ -15,8 +15,8 @@
     <!-- icons fontawesome -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <!-- jQuery -->
-    <script src="js/jquery-3.5.1.js"></script>
-    <script src="js/script.js"></script>
+    <!-- <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/script.js"></script> -->
     <title>Porfolio</title>
   </head>
   <body>
@@ -202,7 +202,10 @@
       <section class="contact">
         <h2>Contact me</h2>
         <div class="contact__form">
-          <form action="">
+          <form
+            action="https://formsubmit.co/da6e68442d3fcc5a078089ade2fd860c"
+            method="POST"
+          >
             <p>
               <label for="name">Fullname</label>
               <input type="text" name="fullname" id="name" />
@@ -220,7 +223,7 @@
               <textarea name="message" id="message" required></textarea>
             </p>
             <p class="button">
-              <input type="button" value="Send Message" id="btnSend" />
+              <input type="submit" value="Send Message" id="btnSend" />
             </p>
           </form>
         </div>
