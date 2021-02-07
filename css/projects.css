@@ -1,6 +1,7 @@
 .projects {
   max-width: 100%;
   align-content: flex-start;
+  margin-bottom: 50px;
 }
 .projects > h2 {
   margin-top: 10%;

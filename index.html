@@ -4,15 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/scrollbar.css" />
+    <link rel="stylesheet" href="./css/projects.css" />
+    <link rel="stylesheet" href="./css/contactme.css" />
     <link
       rel="shortcut icon"
       href="./img/logo_yoan-malaver-02.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="./css/scrollbar.css" />
-    <link rel="stylesheet" href="./css/projects.css" />
-    <link rel="stylesheet" href="./css/contactme.css" />
+    <!-- icons fontawesome -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/script.js"></script>
     <title>Porfolio</title>
   </head>
   <body>
@@ -196,27 +200,27 @@
       </section>
 
       <section class="contact">
-        <h2>Contact</h2>
+        <h2>Contact me</h2>
         <div class="contact__form">
           <form action="">
             <p>
-              <label for="fullname">Fullname</label>
-              <input type="text" name="fullname" id="fullname" />
+              <label for="name">Fullname</label>
+              <input type="text" name="fullname" id="name" />
             </p>
             <p>
-              <label for="fullname">Email Adress</label>
-              <input type="Email" name="email" />
+              <label for="email">Email Adress</label>
+              <input type="Email" name="email" id="email" required />
             </p>
             <p>
-              <label for="fullname">Affair</label>
-              <input type="text" name="affair" />
+              <label for="affair">Affair</label>
+              <input type="text" name="affair" id="affair" required />
             </p>
             <p class="block">
-              <label for="fullname">message</label>
-              <textarea name="message" id="" rows="3"></textarea>
+              <label for="message">message</label>
+              <textarea name="message" id="message" required></textarea>
             </p>
-            <p class="block">
-              <button type="submit">Send</button>
+            <p class="button">
+              <input type="button" value="Send Message" id="btnSend" />
             </p>
           </form>
         </div>
