@@ -1,0 +1,80 @@
+/* responsive */
+@media only screen and (max-width: 1024px) {
+  .container {
+    max-width: 700px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  h2 {
+    text-align: center;
+  }
+  .container {
+    max-width: 580px;
+  }
+  .presentation__initial {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+  }
+  .presentation__aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .presentation__aboutMe img {
+    margin: 15px;
+  }
+  .project__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .project__content img {
+    padding: 0;
+    width: 100%;
+    margin: 10px 0;
+  }
+  .project__content,
+  .presentation__description p {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .col-3 {
+    width: 100%;
+  }
+
+  .row,
+  .row1 {
+    padding: 20px 0;
+    flex-direction: column-reverse;
+  }
+  .col-8 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .presentation__initial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact {
+    margin: 0;
+    height: calc(100vh - 140px);
+  }
+  .social__media {
+    position: relative;
+    width: 100%;
+    left: 0;
+  }
+  .social__media ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .social__media li {
+    margin: 0 10px;
+    align-items: center;
+  }
+} ;

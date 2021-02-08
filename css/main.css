@@ -1,12 +1,11 @@
 /* content */
 .container {
-  max-width: 1200px;
+  max-width: 960px;
   width: 100%;
   margin: 0 auto;
 }
 
 /* seccion de presentacion */
-.presentation,
 .presentation__initial {
   color: var(--white-color);
   width: 100%;
@@ -38,7 +37,7 @@
 }
 
 .presentation__aboutMe img {
-  width: 350px;
+  max-width: 350px;
   height: 350px;
   object-fit: cover;
   border-radius: 4px;
