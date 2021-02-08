@@ -1,11 +1,9 @@
-/* content */
 .container {
   max-width: 960px;
   width: 100%;
   margin: 0 auto;
 }
 
-/* seccion de presentacion */
 .presentation__initial {
   color: var(--white-color);
   width: 100%;
@@ -28,9 +26,7 @@
 .presentation__initial button {
   margin-top: 20px;
 }
-/* fin presentation */
 
-/* seccion aboutme */
 .presentation__aboutMe {
   display: flex;
   margin: 0 auto;
@@ -71,7 +67,6 @@ ul.col3 li {
   font-size: var(--normal);
 }
 
-/* estilos para iconos de programacion */
 .col3 i {
   margin-right: 4px;
 }

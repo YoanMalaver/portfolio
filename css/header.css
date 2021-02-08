@@ -1,4 +1,3 @@
-/* header */
 .header {
   width: 100%;
   height: 70px;
@@ -9,7 +8,7 @@
   position: relative;
   padding: 0 40px;
 }
-/* estilo del logo */
+
 .header__logo {
   width: 70px;
   background-color: transparent;
@@ -37,5 +36,3 @@
 .header__navbar ul li a:hover {
   color: var(--blue-color);
 }
-
-/* fin header */
