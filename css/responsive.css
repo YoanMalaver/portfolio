@@ -86,7 +86,10 @@
     align-items: center;
   }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7fecb9ca3693845f35f5378a653a327edac57c9f
 @media only screen and (max-width: 360px) {
   h2 {
     font-size: 2rem;
