@@ -4,7 +4,7 @@
     max-width: 700px;
   }
   .contact {
-    height: 140vh;
+    height: 90vh;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -15,7 +15,7 @@
     max-width: 580px;
   }
   .presentation__initial {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     /* justify-content: center; */
@@ -44,7 +44,7 @@
     width: 90%;
   }
   .contact {
-    height: 140vh;
+    height: 100%;
   }
   .col-3 {
     width: 100%;
@@ -58,6 +58,28 @@
   .col-8 {
     width: 100%;
   }
+  .social__media {
+    height: 65%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  h1 {
+    text-align: center;
+  }
+  .social__media {
+    width: 100%;
+    left: 0;
+    position: relative;
+  }
+  .social__media ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .social__media li {
+    margin: 0 10px;
+    align-items: center;
+  }
 }
 @media only screen and (max-width: 575px) {
   .presentation__initial {
@@ -65,11 +87,13 @@
     align-items: center;
     justify-content: center;
   }
-
+  .presentation__initial h1 {
+    font-size: 3.2rem;
+  }
   .contact {
     margin: 0;
     margin-bottom: 35px;
-    height: 140vh;
+    height: 80vh;
   }
   .social__media {
     position: relative;
@@ -86,10 +110,6 @@
     align-items: center;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 7fecb9ca3693845f35f5378a653a327edac57c9f
 @media only screen and (max-width: 360px) {
   h2 {
     font-size: 2rem;
@@ -97,11 +117,15 @@
   .container {
     max-width: 320px;
   }
+  .presentation__initial {
+    height: 50vh;
+  }
   .presentation__initial h1 {
     font-size: 2.6rem;
     text-align: center;
   }
   .contact {
+    height: calc(100vh - 120px);
     margin-bottom: 35px;
   }
   .contact__form {
