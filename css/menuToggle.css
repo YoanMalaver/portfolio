@@ -48,3 +48,36 @@
 .header #nav-check:checked ~ .nav-toggle span::after {
   transform: rotate(-45deg);
 }
+
+/* responsive */
+@media (max-width: 991px) {
+  .header label.nav-toggle {
+    display: flex;
+  }
+  .header .header__navbar {
+    width: 100%;
+    position: absolute;
+    background: none;
+    top: 100%;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .header #nav-check:checked ~ .header__navbar {
+    visibility: visible;
+    opacity: 1;
+  }
+  .header .header__navbar ul {
+    margin: 0;
+    display: block;
+  }
+  .header__navbar li {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+  }
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 575px) {
+}
