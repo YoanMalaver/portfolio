@@ -19,7 +19,10 @@
       type="image/x-icon"
     />
     <!-- icons fontawesome -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script
+      src="https://kit.fontawesome.com/8e52938f89.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Porfolio</title>
   </head>
   <body>
@@ -34,10 +37,14 @@
       <!-- fin menu-toggle -->
       <nav class="header__navbar">
         <ul>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Project Practice</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><button>CV</button></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#projects">Project Practice</a></li>
+          <li><a href="#contact-me">Contact</a></li>
+          <li class="curriculum">
+            <a href="./assets/Wilmar Malaver CV Empoderatech.pdf" class="cv"
+              >CV</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -54,7 +61,7 @@
       </section>
 
       <!-- seccion about me -->
-      <h2>About me</h2>
+      <h2 id="about-me">About me</h2>
       <section class="presentation__aboutMe">
         <div class="presentation__description">
           <p>
@@ -83,7 +90,7 @@
       <!-- fin seccion about me -->
 
       <!-- inicio seccion projectos -->
-      <section class="projects">
+      <section id="projects" class="projects">
         <h2>Project Practice</h2>
         <div class="row">
           <div class="col-3">
@@ -109,7 +116,9 @@
                 >
                   Codigo
                 </a>
-                <a href="https://github.com/YoanMalaver/Clone-Login-Neflix">
+                <a
+                  href="https://wilmar-yoan-malaver.github.io/pugstagram.github.io/src/index.html"
+                >
                   Sitio Web
                 </a>
               </p>
@@ -138,7 +147,11 @@
                 <a href="https://github.com/YoanMalaver/Clone-Login-Neflix">
                   Codigo
                 </a>
-                <a href="https://github.com/YoanMalaver/Clone-Login-Neflix">
+                <a
+                  class="disable"
+                  href="https://github.com/YoanMalaver/Clone-Login-Neflix"
+                  disable
+                >
                   Sitio Web
                 </a>
               </p>
@@ -168,7 +181,10 @@
                   href="https://github.com/Wilmar-Yoan-Malaver/Platzi-video-React"
                   >Codigo
                 </a>
-                <a href="https://github.com/YoanMalaver/Clone-Login-Neflix">
+                <a
+                  class="disable"
+                  href="https://github.com/YoanMalaver/Clone-Login-Neflix"
+                >
                   Sitio Web
                 </a>
               </p>
@@ -200,7 +216,10 @@
                 >
                   Codigo
                 </a>
-                <a href="https://github.com/YoanMalaver/Clone-Login-Neflix">
+                <a
+                  class="disable"
+                  href="https://github.com/YoanMalaver/Clone-Login-Neflix"
+                >
                   Sitio Web
                 </a>
               </p>
@@ -209,7 +228,7 @@
         </div>
       </section>
       <!-- seccion formulario -->
-      <section class="contact">
+      <section id="contact-me" class="contact">
         <div class="contact__form">
           <h2>Contact me</h2>
           <form

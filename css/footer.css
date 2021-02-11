@@ -8,4 +8,5 @@
 }
 .footer p {
   color: var(--blue-color);
+  text-align: center;
 }

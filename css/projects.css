@@ -8,12 +8,12 @@
 }
 .project__content img {
   object-fit: cover;
-  max-width: 350px;
+  max-width: 400px;
   text-align: center;
   width: 100%;
   margin: auto;
   border-radius: 4px;
-  padding-right: 20px;
+  padding: 0 20px;
 }
 .project__content h2 {
   border-bottom: none;
@@ -47,4 +47,9 @@
 }
 .col-8 {
   width: 70%;
+}
+/* links disable */
+.project__content .disable {
+  pointer-events: none;
+  color: var(--gray-color);
 }

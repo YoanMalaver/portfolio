@@ -29,6 +29,7 @@
 
 .contact__form p {
   padding: 0.4em;
+  text-align: left;
 }
 .contact__form form label {
   font-weight: 600;
