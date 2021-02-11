@@ -69,12 +69,14 @@
   }
   .header .header__navbar ul {
     margin: 0;
-    display: block;
-  }
-  .header__navbar li {
     display: flex;
-    justify-content: center;
-    margin-top: 5px;
+    flex-direction: column;
+  }
+  .header__navbar ul li {
+    margin: 5px 0;
+  }
+  .header__navbar .curriculum {
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 767px) {

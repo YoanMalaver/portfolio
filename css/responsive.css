@@ -10,6 +10,25 @@
     height: 90vh;
   }
 }
+@media only screen and (max-width: 812px) {
+  .contact {
+    height: 100%;
+  }
+  .social__media {
+    width: 100%;
+    left: 0;
+    position: relative;
+  }
+  .social__media ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .social__media li {
+    margin: 0 10px;
+    align-items: center;
+  }
+}
 @media only screen and (max-width: 767px) {
   h2 {
     text-align: center;
@@ -128,7 +147,7 @@
     text-align: center;
   }
   .contact {
-    height: calc(100vh - 120px);
+    height: 100%;
     margin-bottom: 35px;
   }
   .contact__form {
