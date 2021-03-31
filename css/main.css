@@ -73,6 +73,7 @@ ul.col3 li {
 
 /* estilos para iconos de programacion */
 .col3 i {
+  width: 30px;
   margin-right: 4px;
 }
 .fa-html5 {
