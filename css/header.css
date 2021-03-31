@@ -36,3 +36,22 @@
 .header__navbar ul li a:hover {
   color: var(--blue-color);
 }
+.header__navbar .curriculum a {
+  width: 80px;
+  height: 35px;
+  background-color: none;
+  color: var(--white-color);
+  font-weight: 600;
+  border: 1px solid var(--blue-color);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__navbar .curriculum a:hover {
+  color: black;
+  background: var(--blue-color);
+  transition: background-color 0.8s ease-out;
+}
+
+/* fin header */

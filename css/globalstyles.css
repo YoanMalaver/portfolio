@@ -32,6 +32,8 @@ h2 {
 p {
   font-size: var(--normal);
   color: var(--gray-color);
+  text-align: justify;
+  margin-bottom: 15px;
 }
 
 button {

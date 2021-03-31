@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/globalstyles.css" />
     <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/menuToggle.css" />
     <link rel="stylesheet" href="./css/social.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/main.css" />
@@ -18,18 +19,31 @@
       type="image/x-icon"
     />
     <!-- icons fontawesome -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script
+      src="https://kit.fontawesome.com/8e52938f89.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Porfolio</title>
   </head>
   <body>
     <header class="header">
       <img class="header__logo" src="./img/logo.svg" alt="Logo" />
+      <!-- menu-toggle -->
+      <input type="checkbox" id="nav-check" />
+      <label for="nav-check" class="nav-toggle">
+        <span></span>
+      </label>
+      <!-- fin menu-toggle -->
       <nav class="header__navbar">
         <ul>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Project Practice</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><button>CV</button></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#projects">Project Practice</a></li>
+          <li><a href="#contact-me">Contact</a></li>
+          <li class="curriculum">
+            <a href="./assets/Wilmar Malaver CV Empoderatech.pdf" class="cv"
+              >CV</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -42,10 +56,11 @@
           Web Developer Jr.
         </h1>
         <p>Developer Jr with React</p>
-        <button>Contact</button>
+        <button onclick="location.href='#contact-me'">Contact</button>
       </section>
 
-      <h2>About me</h2>
+      <!-- seccion about me -->
+      <h2 id="about-me">About me</h2>
       <section class="presentation__aboutMe">
         <div class="presentation__description">
           <p>
@@ -72,7 +87,8 @@
         />
       </section>
 
-      <section class="projects">
+      <!-- inicio seccion projectos -->
+      <section id="projects" class="projects">
         <h2>Project Practice</h2>
         <div class="row">
           <div class="col-3">
@@ -98,7 +114,9 @@
                 >
                   Codigo
                 </a>
-                <a href="https://github.com/YoanMalaver/Clone-Login-Neflix">
+                <a
+                  href="https://wilmar-yoan-malaver.github.io/pugstagram.github.io/src/index.html"
+                >
                   Sitio Web
                 </a>
               </p>
@@ -127,7 +145,9 @@
                 <a href="https://github.com/YoanMalaver/Clone-Login-Neflix">
                   Codigo
                 </a>
-                <a href="https://github.com/YoanMalaver/Clone-Login-Neflix">
+                <a
+                  href="https://yoanmalaver.github.io/Clone-Login-Neflix/index.html"
+                >
                   Sitio Web
                 </a>
               </p>
@@ -157,7 +177,10 @@
                   href="https://github.com/Wilmar-Yoan-Malaver/Platzi-video-React"
                   >Codigo
                 </a>
-                <a href="https://github.com/YoanMalaver/Clone-Login-Neflix">
+                <a
+                  class="disable"
+                  href="https://github.com/YoanMalaver/Clone-Login-Neflix"
+                >
                   Sitio Web
                 </a>
               </p>
@@ -189,7 +212,10 @@
                 >
                   Codigo
                 </a>
-                <a href="https://github.com/YoanMalaver/Clone-Login-Neflix">
+                <a
+                  class="disable"
+                  href="https://github.com/YoanMalaver/Clone-Login-Neflix"
+                >
                   Sitio Web
                 </a>
               </p>
@@ -197,8 +223,8 @@
           </div>
         </div>
       </section>
-
-      <section class="contact">
+      <!-- seccion formulario -->
+      <section id="contact-me" class="contact">
         <div class="contact__form">
           <h2>Contact me</h2>
           <form
